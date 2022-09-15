@@ -4,7 +4,6 @@ This is a Daily Ui Design Challenge, created by Taiwo Boluwatife [`Blyncnov`](ht
 
 ```bash
 Grimoire Design Magic Daily UI
-# Comaptible witth any Frontend Framework e.g Vue js, React et Next js and also Vanila Stacks  [ HTML, CSS]
 
 ```
 
@@ -30,7 +29,7 @@ I started this `Project` by bootraping Next js and then installing scss .. I sta
 
 ## Time Taken
 
-* design per day
+* Daily Design
 
 
 ## Developer Information
