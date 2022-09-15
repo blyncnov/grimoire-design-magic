@@ -1,4 +1,6 @@
 import React from "react";
+
+// import statement for next js image
 import Image from "next/image";
 
 // Image Assest
@@ -7,6 +9,7 @@ import PhotoShopImage from "./assests/photoshop.png";
 const BuyNowCard = () => {
   return (
     <>
+      {/* HTML & CSS user can Start Copy Here */}
       <div className="buy-now-card-container">
         <div className="buy-now-card-top-section">
           <div className="buy-now-card-row">
@@ -39,8 +42,13 @@ const BuyNowCard = () => {
           <button className="buy-now-card-button">Buy Now</button>
         </div>
       </div>
+      {/* HTML & CSS user End Copy Here */}
     </>
   );
 };
 
 export default BuyNowCard;
+
+// IMPORTANT :::::::::::::::::::::::::::>>>>>>>
+// The CSS style for this design can be found in the STYLES Folder in the Root Directory
+// ::::::::::::::::::::::::::::::::::::::::::>>>>>>>>
