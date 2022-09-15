@@ -14,8 +14,9 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <BuyNowCard />
+      <div className="grimoire-container">
+        <BuyNowCard />
+      </div>
     </div>
   );
 }

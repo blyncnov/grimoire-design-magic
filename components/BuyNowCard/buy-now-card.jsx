@@ -6,7 +6,7 @@ import PhotoShopImage from "./assests/photoshop.png";
 
 const BuyNowCard = () => {
   return (
-    <div className="grimoire-container">
+    <>
       <div className="buy-now-card-container">
         <div className="buy-now-card-top-section">
           <div className="buy-now-card-row">
@@ -39,7 +39,7 @@ const BuyNowCard = () => {
           <button className="buy-now-card-button">Buy Now</button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
