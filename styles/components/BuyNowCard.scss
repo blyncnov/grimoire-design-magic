@@ -1,0 +1,93 @@
+:root {
+  --photoshop-blue: #133e61;
+  --white: #ffffff;
+  --title: 16px;
+  --description: 11px;
+  --card-width: 250px;
+}
+
+.buy-now-card-container {
+  position: relative;
+  z-index: 4;
+  width: var(--card-width);
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  .buy-now-card-top-section,
+  .buy-now-card-bottom-section {
+    width: 100%;
+    padding: 1em 1.5em;
+  }
+
+  .buy-now-card-top-section {
+    color: var(--white);
+    border-radius: 4px 4px 0 0;
+    background-color: var(--photoshop-blue);
+
+    .buy-now-card-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      .buy-now-card-img {
+        width: 100%;
+        // This Max-Width can be left at 100% or removed
+        max-width: 50%;
+        // This Margin Left can be Removed if your image is sitting well
+        margin-left: -10%;
+      }
+    }
+  }
+
+  .buy-now-card-bottom-section {
+    background-color: var(--white);
+    border-radius: 0 0 4px 4px;
+
+    .buy-now-card-bottom-title {
+      font-size: var(--title);
+    }
+
+    .buy-now-card-bottom-description {
+      font-size: var(--description);
+      margin-top: 0.5em;
+    }
+
+    .buy-now-card-bottom-link {
+      width: 100%;
+      font-size: 10px;
+      color: rgb(80, 80, 255);
+      text-decoration: underline;
+    }
+  }
+
+  .buy-now-card-button {
+    width: 100%;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    padding: 0.5em 0;
+    margin-top: 2em;
+    color: var(--white);
+    min-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--photoshop-blue);
+  }
+
+  &::before {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    background-color: #e8eefc8b;
+    height: 100%;
+    z-index: -1;
+    rotate: 8deg;
+    border-radius: 10px;
+  }
+}
