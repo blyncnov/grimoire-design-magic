@@ -4,6 +4,8 @@
   --title: 16px;
   --description: 11px;
   --card-width: 250px;
+  // Use --with-card-width  if you are working with FlexBox or CSS Grid
+  --with-card-width: 100%;
 }
 
 .buy-now-card-container {

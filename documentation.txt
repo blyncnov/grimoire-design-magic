@@ -1,1 +1,2 @@
 Day 1 : Buy Now Card Component
+Day 2 : Subscribe Card Component

@@ -1,0 +1,89 @@
+:root {
+  --submit-button: #fdc2d4;
+  --white: #ffffff;
+  --black: black;
+  --title: 16px;
+  --border: rgb(243, 163, 179);
+  --description: 11px;
+  --card-width: 250px;
+  // Use --with-card-width  if you are working with FlexBox or CSS Grid
+  --with-card-width: 100%;
+}
+
+.subscribe-card-container {
+  position: relative;
+  z-index: 4;
+  width: var(--card-width);
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  .subscribe-card-section {
+    width: 100%;
+    padding: 2em 1.5em;
+    background-color: var(--white);
+  }
+
+  .subscribe-card-input-section {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 1em;
+
+      label {
+        font-size: 10px;
+      }
+
+      .input-form-control {
+        width: 100%;
+        padding: 0.2em;
+        border: 1px solid rgba(177, 178, 184, 0.825);
+        border-radius: 2px;
+      }
+
+      .single-input-checkbox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 10px;
+
+        label {
+          font-size: 10px;
+        }
+      }
+
+      .subscribe-card-button {
+        width: 100%;
+        border-radius: 3px;
+        outline: none;
+        border: 1px solid var(--border);
+        padding: 0.5em 0;
+        margin-top: 1em;
+        color: var(--black);
+        min-height: 30px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        background-color: var(--submit-button);
+      }
+    }
+  }
+
+  &::before {
+    content: " ";
+    width: 100%;
+    position: absolute;
+    background-color: #e8eefc8b;
+    height: 50%;
+    bottom: -5%;
+    right: -5%;
+    z-index: -1;
+    border-radius: 4px;
+  }
+}
